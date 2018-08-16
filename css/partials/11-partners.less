@@ -1,0 +1,80 @@
+#partners {
+	padding: 81px 0 46px 0;
+	h2 {margin-bottom: 35px;}
+	.logo {
+		display: block;
+		float: left;
+		height: 57.5px;
+		position: relative;
+		&:before, &:after {
+			content:"";
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			background: url("../images/11-logos.jpg") no-repeat;
+			.trans;
+		}
+		&:after {opacity: 0;}
+		&:hover {
+			&:before {opacity: 0;}
+			&:after {opacity: 1;}
+		}
+		&.n1 {
+			width: 71px;
+			margin-left: 3px;
+			&:before {background-position: 0 0;}
+			&:after {background-position: 0 -57.5px;}
+		}
+		&.n2 {
+			width: 111px;
+			&:before {background-position: -71px 0;}
+			&:after {background-position: -71px -57.5px;}
+		}
+		&.n3 {
+			width: 144px;
+			&:before {background-position: -182px 0;}
+			&:after {background-position: -182px -57.5px;}
+		}
+		&.n4 {
+			width: 129px;
+			&:before {background-position: -326px 0;}
+			&:after {background-position: -326px -57.5px;}
+		}
+		&.n5 {
+			width: 80px;
+			&:before {background-position: -455px 0;}
+			&:after {background-position: -455px -57.5px;}
+		}
+		&.n6 {
+			width: 133px;
+			&:before {background-position: -535px 0;}
+			&:after {background-position: -535px -57.5px;}
+		}
+		&.n7 {
+			width: 112px;
+			&:before {background-position: -668px 0;}
+			&:after {background-position: -668px -57.5px;}
+		}
+		&.n8 {
+			width: 58px;
+			&:before {background-position: -780px 0;}
+			&:after {background-position: -780px -57.5px;}
+		}
+		&.n9 {
+			width: 107px;
+			&:before {background-position: -838px 0;}
+			&:after {background-position: -838px -57.5px;}
+		}
+	}
+	.link {
+		text-align: right;
+		padding: 22px 10px 0 0;
+		a {
+			color: #125593;
+			text-decoration: underline;
+			&:hover {text-decoration: none;}
+		}
+	}
+}

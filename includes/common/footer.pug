@@ -1,0 +1,21 @@
+footer
+	.container
+		h2 Остались вопросы? <br>Получите консультацию наших специалистов
+		form(method='post' ng-submit='sendForm("Консультация","normal","thanx1")')
+			input(type='text' name='phone' placeholder='+7 (___) ___-__-__' ng-model='form.phone' class='phone-field')
+			button.btn.btn-green(type='submit') #[span Получить консультацию]
+			.confirm
+				input(type="checkbox" name="confirm" id="confirm6" checked)
+				label(for="confirm6") нажимая на кнопку, вы даете согласие на обработку своих персональных данных
+		.footer.clear
+			.left
+				p Общество с ограниченной ответственностью «Уральский лидер»<br>454047, г. Челябинск, ул. 2-ая Павелецкая, д.36, корп.13, пом. 68<br>ОГРН 1157460002457 ИНН 7460021387 КПП 746001001<br>р/сч 40702810490530002947 ОАО «ЧЕЛЯБИНВЕСТБАНК»
+				a.link(data-fancybox data-src="#privacy-policy" href="javascript:;") Политика конфиденциальности
+			.contact
+				a.phone(href="tel:+78007771528") +7 (800) 777-15-28
+				a.mail(href="mailto:zakaz-arahis@yandex.ru") zakaz-arahis@yandex.ru
+				p Работает по технологии 
+					a.link(href="http://zolle.ru/" target="_blank") zolle
+			a.logo(href="")
+				img(src="images/logo-1.png", alt="")
+				span Арахис глазированный

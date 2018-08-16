@@ -1,0 +1,33 @@
+#boss {
+	padding: 83px 0;
+	.container {padding: 0 10px;}
+	h2 {margin-bottom: 47px;}
+	.photo {
+		display: block;
+		float: left;
+	}
+	.text {
+		width: 505px;
+		float: left;
+		padding: 31px 0 0 38px;
+		p {
+			margin-bottom: 12px;
+			font-style: italic;
+		}
+		.author {
+			width: 385px;
+			padding-top: 40px;
+			position: relative;
+			&:after {
+				content: url("../images/13-signature.jpg");
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			span {
+				display: block;
+				&.n1 {font-weight: 300;}
+			}
+		}
+	}
+}

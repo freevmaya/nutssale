@@ -1,0 +1,62 @@
+#flavours {
+	margin-bottom: 108px;
+	h2 {padding: 70px 0 30px 0;}
+	.container {padding: 0 10px;}
+	.bx {
+		display: block;
+		float: left;
+		width: 235px;
+		height: 235px;
+		position: relative;
+		&.blank {}
+		&:hover {
+			.pic {
+				img {
+					&.pic-2 {opacity: 0;}
+					&.pic-2 {opacity: 1;}
+				}
+			}
+			.text {
+				color: #FFF;
+				background: #FB9C18;
+			}
+		}
+		.pic {
+			width: 235px;
+			height: 235px;
+			position: relative;
+			img {
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				.trans;
+				&.pic-2 {opacity: 0;}
+			}
+		}
+		.text {
+			display: block;
+			position: absolute;
+			bottom: 30px;
+			right: 0;
+			left: 0;
+			line-height: 46px;
+			z-index: 1;
+			.trans;
+			text-transform: uppercase;
+			text-align: center;
+			color: #221000;
+		}
+	}
+	.mb15 {margin-bottom: 15px;}
+	.form {
+		.grad-orange;
+		padding: 50px 0;
+		text-align: center;
+		h2 {
+			color: #FFF;
+			margin-bottom: 30px;
+			padding: 0;
+		}
+	}
+}

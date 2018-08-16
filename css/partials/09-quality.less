@@ -1,0 +1,46 @@
+#quality {
+	padding-bottom: 80px;
+	h2 {padding: 87px 0 33px 0;}
+	.inn {
+		width: 954px;
+		height: 445px;
+		background: url("../images/09-bg-1.jpg") left 26px no-repeat;
+		position: relative;
+		float: right;
+		.txt {
+			width: 754px;
+			height: 396px;
+			overflow: hidden;
+			position: relative;
+		    top: 25px;
+			padding: 0 0 0 120px;
+			p {position: relative;}
+			.n1 {padding: 45px 0 41px 0;}
+			.n2 {padding: 30px 0 35px 0;}
+			.n3 {padding: 28px 0 35px 0;}
+			.n4 {padding: 22px 0 30px 0;}
+		}
+		.pic {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 10px;
+			-webkit-box-shadow: 0 0 16px rgba(4,6,8,0.32);
+			        box-shadow: 0 0 16px rgba(4,6,8,0.32);
+			&:hover:after {opacity: 1;}
+			&:after {
+				content:"";
+				position: absolute;
+				z-index: 1;
+				width: 298px;
+				height: 396px;
+				.trans;
+				opacity: 0;
+				background: rgba(0,0,0,0.5) url("../images/loupe.png") center center no-repeat;
+				top: 24px;
+				left: 22px;
+			}
+			img {display: block;}
+		}
+	}
+}

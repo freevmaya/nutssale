@@ -1,0 +1,19 @@
+#special-conditions
+	.bg
+	.container
+		h2 Постоянным партнерам мы предлагаем <br>обсобые условия сотрудничества
+		.bx.n1
+			p Специальные условия <br>при оплате наличными
+		.bx.n2
+			p Частичная компенсация <br>стоимости доставки
+		.bx.n3
+			p Разнообразные <br>маркетинговые акции
+	.form
+		.container
+			h2 Узнайте больше о наших специальных предложениях
+			form(method='post' ng-submit='sendForm("Узнать","normal","thanx1")')
+				input(type='text' name='phone' placeholder='+7 (___) ___-__-__' ng-model='form.phone' class='phone-field')
+				button.btn.btn-green(type='submit' ng-disabled="!accept") #[span Узнать больше]
+				.confirm
+					input(type="checkbox" name="confirm" id="confirm6" checked ng-model="accept")
+					label(for="confirm6") нажимая на кнопку, вы даете согласие на обработку своих персональных данных

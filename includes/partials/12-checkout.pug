@@ -1,0 +1,23 @@
+#checkout
+	.container
+		h2 Проверьте, есть ли у нас партнеры <br>в Вашем регионе
+		form.clear(method='post' ng-submit='sendForm("Проверить","region","thanx1")')
+			.clear
+				input.n1(type='text' name='region' placeholder='Ваш регион' ng-model='form.region')
+				input.n2(type='text' name='phone' placeholder='Ваш телефон' ng-model='form.phone' class='phone-field')
+				button.btn.btn-green(type='submit' ng-disabled="!accept") #[span ПРОВЕРИТЬ]
+			.confirm
+				input(type="checkbox" name="confirm" id="confirm" checked ng-model="accept")
+				label(for="confirm") нажимая на кнопку, вы даете согласие <br>на обработку своих персональных данных
+		h2.n2 Нет? Тогда предлагаем Вам <br>особые условия сотрудничества:
+		img.pic1(src="images/12-pic.png", alt="")
+		.txt
+			.clear
+				img.pic2.spin-it(src="images/12-1.png", alt="")
+				span Бесплатная доставка <br>до Вашего склада
+			.clear
+				img.pic3.spin-it(src="images/12-2.png", alt="")
+				span Программа мотивации для торговых <br>точек и менеджеров по продажам
+			.clear
+				img.pic4.spin-it(src="images/12-3.png", alt="")
+				span Выкуп нераспроданных остатков <br>нашей продукции

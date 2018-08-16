@@ -1,0 +1,27 @@
+#get-kp
+	.container
+		h2 ...у нас есть для Вас особое предложение! <br>Укажите свой номер телефона и запросите наше КП
+		form(method='post' ng-submit='sendForm("Запрос КП 2","normal","thanx1")')
+			.bx.n1
+				p Выберите сферу деятельности
+				select(id="itemField")
+					option Оптовая компания
+					option Пивной бар
+					option Кафе
+					option Ресторан
+					option Продуктовый магазин
+					option Рыбный магазин
+					option Магазин пива
+					option Клуб
+					option Баня
+					option Другая сфера
+			.bx.n2
+				p &nbsp;
+				input(type='text' name='phone' placeholder='+7 (___) ___-__-__' ng-model='form.phone' class='phone-field')
+			.bx.n3
+				p &nbsp;
+				button.btn.btn-orange(type='submit' ng-disabled="!accept") #[span Запросить КП]
+			.clear
+			.confirm
+				input(type="checkbox" name="confirm" id="confirm5" checked ng-model="accept")
+				label(for="confirm5") нажимая на кнопку, вы даете согласие на обработку своих персональных данных

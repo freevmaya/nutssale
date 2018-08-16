@@ -1,0 +1,46 @@
+#calc
+	.container
+		img.top(src="images/01-after.png", alt="")
+		img.n1.spin-it(src="images/02-bg-1.png", alt="")
+		img.n2.spin-it(src="images/02-bg-2.png", alt="")
+		img.n3.spin-it(src="images/02-bg-3.png", alt="")
+		h2 Рассчитайте точную стоимость <br>Вашего заказа
+		form(method='post')
+			.clear
+				.bx 
+					label(for="") Выберите брэнд
+					select(id="itemBrand")
+						option ХрустNut
+						option ХрустОК
+						option Свой брэнд
+				.bx
+					label(for="") Выберите вкус
+					select(id="itemFlavour")
+						option Васаби
+						option Сыр
+						option Креветка
+						option Аджика
+						option Барбекю
+						option Бекон
+						option Пикантный
+						option Салями
+						option Сметана и лук
+						option Холодец с хреном
+						option Шашлык
+						option Свой вкус
+				.bx.last
+					label(for="") Выберите объем
+					select(id="itemAmount")
+						option 100 кг
+						option от 100 до 150 кг
+						option от 150 до 200 кг
+						option от 200 до 250 кг
+						option от 250 до 300 кг
+						option от 300 до 350 кг
+						option от 350 до 400 кг
+						option от 400 до 450 кг
+						option от 450 до 500 кг
+						option больше 500 кг
+			textarea(name="calc-comment"  ng-model='form.info' placeholder="Укажите точный адрес доставки и добавьте свой комментарий к заказу")
+			.btn-box
+				button.btn.btn-green(data-fancybox data-src="#calcpop" href="javascript:;") #[span Рассчитать стоимость]

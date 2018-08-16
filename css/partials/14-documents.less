@@ -1,0 +1,66 @@
+#documents {
+	padding-bottom: 75px;
+	//.container {padding: 0 10px;}
+	h2 {margin-bottom: 46px;}
+	.main {
+		display: block;
+		float: left;
+		margin-right: 27px;
+		position: relative;
+		&.n1 {margin-left: 5px;}
+		&.n3 {margin-right: 0;}
+		&.n4 {
+			float: right;
+			margin-right: 6px;
+		}
+		&:hover:after {opacity: 1;}
+		&:after {
+			content:"";
+			position: absolute;
+			z-index: 1;
+			width: 182px;
+			height: 262px;
+			.trans;
+			opacity: 0;
+			background: rgba(0,0,0,0.5) url("../images/loupe.png") center center no-repeat;
+			top: 19px;
+			left: 18px;
+		}
+		img {display: block;}
+	}
+	.slick-dots {
+		width: 100%;
+		text-align: center;
+		list-style: none;
+		li {
+			display: inline-block;
+			margin: 0 2px;
+			&.slick-active {
+				button {
+					background: @green;
+					opacity: 1;
+				}
+			}
+			button {
+				display: block;
+				width: 10px;
+				height: 10px;
+				background: #3B2715;
+				opacity: 0.5;
+				border: none;
+				padding: 0;
+				margin: 15px 5px;
+				.rad(50%);
+				overflow: hidden;
+				text-indent: -9999px;
+				.trans;
+				outline: none;
+				cursor: pointer;
+				&:hover {
+					opacity: 1;
+					background: @green;
+				}
+			}
+		}
+    }
+}
