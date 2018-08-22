@@ -23,6 +23,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/fav/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <script type="text/javascript" src="http://pjof.ru/messenger/msghg.js?2" data-indent="msghg" data-icon-class="orange"></script>
   <style type="text/css">
     body {
       /*opacity: 0;*/
@@ -49,6 +50,48 @@
 
     .social .vk {
       background: url(images/vk32.png) 0 0 no-repeat;
+    }
+
+    .msghg {
+      z-index: 100;
+      font-size: 1.6rem;
+    }
+
+    .msghg-item-head {
+      margin-top: -0.5rem !important;
+      font-size: 1rem !important;
+    }
+
+    .msghg .msghg-item-text {
+      font-size: 1.6rem !important;
+      margin-top: 0.1rem;
+    }
+
+    .msghg h3 {
+      padding: 0.6rem !important;
+    }
+
+    .msghg textarea {
+      border-radius: 0.5em !important;
+      font-size: 1.6rem !important;
+      padding: 0px 0.5em !important;
+    }
+
+    .msghg-help {
+        font-size: 0.8rem !important;
+    }
+
+    .modal .actions button {
+      background-color: #fda01f !important;
+      font-size: 1rem;
+    }
+
+    .msghg-busy {
+      background-color: #e79f1f !important;
+    }
+
+    .modal .actions {
+      background: #f7efe2 !important;
     }
 
   </style>

@@ -463,7 +463,7 @@ textarea.error
 	webkit-border-radius: 35px;
 	webkit-transition: all 0.3s;
 	width: 100%;
-	z-index: 900;
+	/*z-index: 900;*/
 	font-size: 1.4em;
 }
 .select .select-styled.success
